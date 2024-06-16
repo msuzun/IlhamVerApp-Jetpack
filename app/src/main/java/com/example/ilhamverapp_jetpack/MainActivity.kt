@@ -66,10 +66,13 @@ fun Sayfa() {
         },
         content = {
             Column(
-                modifier =
-                Modifier.fillMaxSize(),
+
+                modifier = Modifier.fillMaxSize(),
+                //Bu özellik, Column'un mevcut alanı tamamen doldurmasını sağlar. Yani, Column'un genişliği ve yüksekliği, içinde bulunduğu konteynerin genişliği ve yüksekliği kadar olur.
                 verticalArrangement = Arrangement.SpaceEvenly,
+                //verticalArrangement = Arrangement.SpaceEvenly: Bu özellik, Column içindeki çocuk öğelerin dikey düzlemde nasıl düzenleneceğini belirler. Arrangement.SpaceEvenly seçeneği, çocuk öğeler arasında eşit boşluk bırakılmasını sağlar. Yani, çocuk öğeler arasındaki boşluklar eşit olacak şekilde dağıtılır.
                 horizontalAlignment = Alignment.CenterHorizontally
+                //horizontalAlignment = Alignment.CenterHorizontally: Bu özellik, Column içindeki çocuk öğelerin yatay düzlemde nasıl hizalanacağını belirler. Alignment.CenterHorizontally seçeneği, çocuk öğelerin yatay düzlemde ortalanmasını sağlar. Yani, çocuk öğeler Column'un yatay ekseni boyunca ortalanır.
             )
             {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
